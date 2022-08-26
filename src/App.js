@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import TukiComponents from "./components/TukiComponents";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    // Logica del componente
+    console.log("App");
+
+    // Renderizar el componente
+    return (
+        <div className="App">
+            <h1>La banda del Tuki</h1>
+            <h2>Integrantes</h2>
+            <h3>Meli</h3>
+            <h3>Tuki</h3>
+            <h3>Guille</h3>
+            <h3>Mathi</h3>
+            <h3>Pablo</h3>
+            <TukiComponents />
+        </div>
+    );
+};
 
 export default App;
+
